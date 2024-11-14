@@ -1,6 +1,7 @@
 function moviedata ()
 {
-let title=document.getElementById('Title').value
+let title=document.getElementById('Title').value;
+const API_KEY='9b97a8a0';
 fetch(`http://www.omdbapi.com/?t=${title}&apikey=${API_KEY}`)
 .then(response=>response.json())
 .then(data=>{
