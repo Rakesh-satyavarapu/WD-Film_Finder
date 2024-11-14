@@ -2,7 +2,7 @@ function moviedata ()
 {
 let title=document.getElementById('Title').value;
 const API_KEY='9b97a8a0';
-  const apiUrl = `https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/?t=${title}&apikey=${API_KEY}`;
+const apiUrl = `https://www.omdbapi.com/?t=${title}&apikey=${API_KEY}`;
 fetch(apiUrl)
 .then(response=>response.json())
 .then(data=>{
